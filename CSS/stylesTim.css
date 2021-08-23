@@ -86,4 +86,8 @@ h5, p {
     width:100%;
     margin:0;
   }
+
+  h6 {
+    font-size:14px !important;
+  }
 }
