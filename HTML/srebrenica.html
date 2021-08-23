@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Travel Owl - Srebrenica </title>
+  <link rel="icon" type="image/png" href="../Images/Srebrenica/srebrenica-icon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../CSS/stylesSrebrenica.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Bootstrap Stylesheets -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"> </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-2 navigation">
+        <div class="fixed">
+          <a href="gradovi.html">
+            <button type="button" class="btn btn-outline-dark btn-lg gradovi">
+              <i class="fas fa-long-arrow-alt-left"></i>
+              Gradovi
+            </button>
+          </a>
+          <a href="index.html">
+            <button type="button" class="btn btn-outline-dark btn-lg pocetna">
+              <i class="fas fa-home"></i>
+            </button>
+          </a>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">
+                <button type="button" class="btn btn-dark btn-lg nav-button">
+                  Home
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#tur-org-srebrenica">
+                <button type="button" onclick="showSectionSrebrenica('tur-org-srebrenica');" class="btn btn-outline-dark btn-lg nav-button">
+                  Turistička </br> organizacija
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#kh-obiljezja-srebrenica">
+                <button type="button" onclick="showSectionSrebrenica('kh-obiljezja-srebrenica');" class="btn btn-outline-dark btn-lg nav-button">
+                  Kulturno-historijska <br /> obilježja
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#atrakcije-srebrenica">
+                <button type="button" onclick="showSectionSrebrenica('atrakcije-srebrenica');" class="btn btn-outline-dark btn-lg nav-button">
+                  Atrakcije
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#kuca-dobrih-tonova">
+                <button type="button" onclick="showSectionSrebrenica('kuca-dobrih-tonova');" class="btn btn-outline-dark btn-lg nav-button">
+                  Kuca dobrih tonova
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#memorijalni">
+                <button type="button" onclick="showSectionSrebrenica('memorijalni');" class="btn btn-outline-dark btn-lg nav-button">
+                  Memorijalni centar
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="fixed hidden">
+          <img src="../Images/Srebrenica/srebrenica-grb.png" class="grb grb-hidden" alt="">
+          <h1> Srebrenica </h1>
+        </div>
+      </div>
+      <div class="col-lg col main-box">
+        <div class="section" id="home">
+          <img src="../Images/Srebrenica/srebrenica.jpg" alt="" class="main-img">
+        </div>
+        <div class="section-container">
+          <div class="section img-section" id="tur-org-srebrenica">
+            <h3 class="heading">Turistička organizacija </h3>
+            <img src="../Images/Srebrenica/tur-org.png" alt="" class="img-tur-org">
+            <p class="tur-info">"Turistička organizacija Srebrenica je neprofitna javna ustanova osnovana od strane Skupštine
+              opštine Srebrenica 2005. godine. Djeluje na području opštine Srebrenica, s ciljem stvaranja povoljnijih
+              uslova za razvoj turizma. Osnovna djelatnost Turističke organizacije je promocija i doprinos
+              uspješnijem poslovanju privrede na lokalnom nivou." </p>
+            <pre>
+                          Srebreničkog odreda bb
+                               75 430 Srebrenica
+                mail: tours_srebrenica@yahoo.com
+                                tel: 056 440-072
+                        web: tours-srebrenica.ba
+             </pre>
+          </div>
+          <div id="kh-obiljezja-srebrenica">
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h3 class="heading"> Kulturno-historijska obilježja </h3>
+                  <h4> Srebrenički stećci </h4>
+                  <p> Kada je riječ o broju stećaka na području općine Srebrenica Turistička organizacija Srebrenica
+                    u saradnji s Muzejskom zbirkom Narodne biblioteke Srebrenica 2010. i 2011. godine radila je
+                    istraživanje o brojnosti stećaka na području općine Srebrenica i tom prilikom evidentirano
+                    je 50 nekropola stećaka koje broje između 950 i hiljadu stećaka. Stećke možete pronaći na mnogim
+                    mjestima u Srebrenici pa tako i u centru grada kod katoličke crkve svete Marije, a neka od sela
+                    u kojima su najzastupljeniji stećci su Bektići i Šušnjari.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Srebrenica/stecci.jpg" alt="Stećci" id="stecci" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Srebrenica/rimski-municipium-skealani1.jpg" alt="Municipium" class="municipium image-style">
+                  <img src="../Images/Srebrenica/rimski-municipium-skealani2.jpg" alt="Municipium" class="municipium image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Arheološko nalazište </h4>
+                  <p> Stanovnici naselja Skelani na obali rijeke Drine u opštini Srebrenica nisu ni sanjali da je tu
+                    u II vijeku n. e., punim sjajem blistao - Municipium malvesiatium, značajan rimski administrativni
+                    centar ove regije. Veličanstveni mozaici, skulpture i antički spomenici zaboravljenog grada sa
+                    imperatorskom palatom u centru, očima radoznalaca ukazuju se po prvi put prije 120 godina kada
+                    je svoja istraživanja započeo Karlo Pač, austrougarski istoričar. On je pronašao rimsku
+                    nekropolu i kasnoantičko groblje sa dvije ranohrišćanske bazilike. Svoja otkrića Pač je
+                    evidentirao, napravio je tlocrt municipijuma, iscrtao spomenike i kompletno istraživanje
+                    objavio u Zemaljskom glasniku muzeja Bosne. Međutim, iste godine, desila se velika poplava
+                    i područje sa rimskim bazilikama prekrila su dva metra debeli nanosi riječnog mulja
+                    i šljunka. Prošlo je od tada 112 godina, dok 2008. godine arheolog, mr. Mirko Babić,
+                    nije doživio ono što sanja svaki arheolog: pronašao je ove spomenike.
+                    Mozaici su sada prekriveni nekom vrstom plastenika kako bi se zastitili od kiše
+                    i nevremena a pri tome bili dostupni posjetiocima.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Dervišagića kuća </h4>
+                  <p> Dervišagića kuća je nacionalni spomenik Bosne i Hercegovine. Nalazi se u mahali Crvena rijeka
+                    u Srebrenici. Kuća potiče iz 19. vijeka i predstavlja jedini sačuvani primjer gradske kuće u
+                    Srebrenici iz Osmanskog perioda vladavine.Tokom 20. veka, kuću je kupio Rasim Travničanin,
+                    sin Derviš-age Travničanina i od tada kuća postaje poznata pod nazivom Dervišagića kuća.
+                    Dervišagića kuća se nalazi u blizini Harem džamije u mahali Crvena rijeka u sjevernoistočnom dijelu
+                    Srebrenice. U vrijeme izgradnje kuće, mahala je imala oko 25 kuća, džamiju i mekteb. Prvobitni
+                    naziv mahale bio je Guber ili Crni Guber. Kuća je služila za stanovanje sve do početka oružanih
+                    sukoba u Bosni i Hercegovini devedesetih godina dvadesetog vijeka.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Srebrenica/dervisagica-kuca.jpg" alt="Dervišagića kuća" id="dervisagica" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Srebrenica/dzamija-slapovici.jpg" alt="Džamija u Slapovićima" id="dzamijaS" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Džamija u Slapovićima </h4>
+                  <p> Džamija u Slapovićima se nalazi u naseljenom području Slapovići – Bučje, udaljenom oko 4,5 km
+                    jugozapadno od Srebrenice. Izgrađena je 1936. godine od strane Mula Selima Alemića. Jedina je
+                    džamija na području Srebrenice koja je nakon rekonstrukcije zadržala izvorni oblik.
+                    Historijska građevina džamija u Slapovićima 2010. godine proglašena je za nacionalni spomenik BiH.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Manastir Karno </h4>
+                  <p> Manastir Karno je manastir Srpske pravoslavne crkve. Nalazi se u selu Međe, Opština Srebrenica.
+                    Nedaleko od današnjeg hrama, na mjestu poznatom kao „Crkvina“ nalaze se ostaci stare srednjovjekovne
+                    crkve koja je srušena u vrijeme najezde Turaka. To mjesto danas je obilježeno Časnim Krstom.
+                    Hram je više puta stradao u svojoj istoriji. Najprije je ruinirani hram obnovio proto
+                    Tihomir Mitrović 1956. godine. U teškom nevremenu 1973. godine, hram je bio oštećen, a na obnovu
+                    čekao je do 1979. godine.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Srebrenica/manastir-karno.jpg" alt="Manastir Karno" id="karno" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section ">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Srebrenica/manastir-sase.jpg" alt="Manastir Svete Trojice" id="sase" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Manastir Svete Trojice </h4>
+                  <p>
+                    Manastir Svete Trojice, manastir Srpske pravoslavne crkve,
+                    nalazi se u Sasama, općina Srebrenica, entitet Republika Srpska, Bosna i Hercegovina.
+                    Smješten je u neposrednoj blizini antičkog lokaliteta Domavija. Manastir je sagrađen 1242. godine
+                    i bio je metoh/imanje manastira Hilandara. Gotovo 400 godina su temelji nekadašnjeg manastirskog hrama
+                    bili prekriveni naslagom zemlje, a i sam manastir je pao u zaborav. Tek 1858. godine saški rudari su otkopali
+                    manastirske temelje i na njima sagradili novu crkvu, koju su prema Đorđu Beatoviću posvetili svetom apostolu Petru.
+                    Temelji i zidovi crkve u Sasama iskopani su i obnovljeni 1850. godine.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Stari grad Klotjevac </h4>
+                  <p> Smješten na strmoj stijeni iznad Drine. Pošto je većina srednjovjekovnih bosanskih gradova
+                    građena na uzvišenjima pa tako i ovaj grad imao je odbrambeni karakter. Imao je dobru preglednost
+                    tog dijela kanjona Drine. Činjenica da se samo 7 km nizvodno nalazi još jedna srednjovjekovna
+                    utvrda- srednjovjekovni grad Đurđevac, pokazuje istorijsku važnost ovog kraja. Nekropole stećaka
+                    „razasute" u tom području opštine Srebrenica a koje gravitiraju u okolini Klotjevačkog grada
+                    kao što su: Mramorje kod sela Ljeskovik, Zaelisije, Urisići, Lubničko brdo i druga pokazuju
+                    kontinuitet življenja odavnina na ovim prostorima.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Srebrenica/klotjevac.jpg" alt="Stari grad Klotjevac" id="klotjevac" class="image-style">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="atrakcije-srebrenica">
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h3 class="heading"> Atrakcije </h3>
+                  <h4> Guber-voda </h4>
+                  <p> Voda sa vrela Crni Guber 1956. godine proglašena je lijekom. Guber voda sadrži tokove Očne vode,
+                    Crnog Gubera, Ljepotice, Sinus vode, Malog gubera, Kožne vode i nekoliko drugih od 48 različitih
+                    izvora ljekovite mineralne vode. Danas ne postoji izgrađena banja ali posjetioci mogu da priđu
+                    i koriste 6 različitih ljekovitih izvora. Banja Guber ima i druge prednosti, kao novo urađeno
+                    šetalište sa klupama i malim šadrvanima, mini teretanom, kafićem, i dječijim igralištem. Svako
+                    je dobrodošao da prošeta i odmori oči na predivnom zelenilu borove šume koja okružuje šetalište.</p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Srebrenica/guber.jpg" alt="Guber-voda" id="guber" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Srebrenica/jezero-perucac.jpg" alt="Jezero Perućac" class="perucac image-style">
+                  <img src="../Images/Srebrenica/jezero-perucac2.jpg" alt="Jezero Perućac" class="perucac image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Jezero Perućac </h4>
+                  <p> Perućac je vještačko jezero u Bosni i Hercegovini i Srbiji kod mjesta Perućac. Nastalo je pregrađivanjem
+                    toka Drine, za potrebe hidroelektrane "Bajina Bašta". Akumulacija je dugačka 54 km i prostire se kroz kanjon
+                    do Višegrada. Obala i veći dio dna su kameniti. Sredina jezera je granica između Bosne i Hercegovine i Srbije.
+                    Jezero se nalazi u prirodnom zavoju kanjona rijeke Drine i obavija planinu Taru, mijenjajući smjer toka od
+                    sjevera prema jugoistoku. Na lijevoj strane nalazi Nacionalni park Drina. Jezero obiluje raznim vrstama ribe i
+                    pogodno je za sportski ribolov. Opuštajuća destinacija za odmor sa porodicom ili prijateljima. Možete uživati
+                    u turama kroz kanjon Drine ili jednostavno se sunčati na obali sa divnim pogledom na čistu tirkiznu boju jezera
+                    ili uživati u lokalnim specijalitetima u jednom od restorana na jezeru.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section img-section" id="kuca-dobrih-tonova">
+            <div class="row">
+              <div class="col-lg">
+                <h3 class="heading"> Kuća dobrih tonova </h3>
+                <p> Osnovana je u Srebrenici 2011. godine. Kuća dobrih tonova je mjesto u kojem djeca i mladi iz regije
+                  Srebrenica imaju pristup kvalitetnim edukativnim, kulturnim i zabavnim sadržajima. To je kuća u kojoj se
+                  svi, bez obzira na etničku, socijalnu, religijsku i svaku drugu pripadnost, osjećaju dobro družeći se i
+                  dijeleći iskustvo, znanje i radost. Aktivnosti u kući dobrih tonova su raspoređene u šest programa
+                  – muzika, edukacija, community engagement, lifestyle, volontarizam, film i književnost.
+                  Svako može posjetiti ovu ustanovu i vidjeti njihov rad.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <img src="../Images/Srebrenica/kuca1.jpg" alt="Kuća dobrih tonova" class="kuca image-style">
+                <img src="../Images/Srebrenica/kuca2.jpg" alt="Kuća dobrih tonova" class="kuca image-style">
+              </div>
+            </div>
+          </div>
+          <div class="section img-section" id="memorijalni">
+            <div class="row">
+              <div class="col-lg">
+                <h3 class="heading"> Memorijalni centar Srebrenica </h3>
+                <p> Memorijalni centar Srebrenica - Potočari je memorijalni kompleks izgrađen u znak sjećanja na žrtve
+                  genocida nad Bošnjacima Srebrenice tokom rata u Bosni i Hercegovini. Centar je izgrađen u naselju Potočari
+                  u blizini Srebrenice a sastoji se od spomen obilježja i mezarja. Do jula 2012. godine, pomoću DNK analize
+                  posmrtnih ostataka žrtava iz različitih masovnih grobnica, identificirano je 6.838 žrtava genocida dok je 6.066
+                  žrtava pokopano u ovom memorijalnom centru.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <img src="../Images/Srebrenica/memorijalni.jpg" alt="Memorijalni centar Srebrenica" id="memorijalni-centar" class="image-style">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 aside-box">
+        <div class="fixed">
+          <img src="../Images/Srebrenica/srebrenica-grb.png" class="grb" alt="">
+          <h1 class="aside-header"> Srebrenica </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../JS/index.js" charset="utf-8"></script>
+</body>
+
+</html>

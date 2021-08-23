@@ -1,0 +1,226 @@
+/* HTML Elements */
+html, body {
+  width: 100%;
+  height:100%;
+background-color: #DEEDF0 !important;
+
+}
+
+h3, h4{
+padding: 5% 0% 0% 5%;
+}
+
+
+pre{
+  text-align:right;
+  padding:2%;
+  font-weight:bold;
+  font-family: Poppins;
+}
+
+p{
+  padding:5%;
+}
+
+ul {
+  margin-top:30% !important;
+}
+
+a {
+  text-decoration:none !important;
+}
+
+ /* Div for the main row */
+.row {
+  height:100%;
+}
+
+/* Navigation */
+.gradovi {
+  margin:3%;
+}
+
+.nav {
+  margin-top:10%;
+
+}
+
+.nav-link {
+  padding-left:0 !important;
+}
+
+.nav-button {
+  width:100%;
+  margin-bottom:10%;
+}
+
+.fixed {
+  position:fixed;
+}
+
+/* Main Box */
+.main-box {
+  height:100%;
+  width:100%;
+padding: 0 !important;
+border-left: 1px solid white;
+border-right: 1px solid white;
+}
+
+.main-img {
+  width:100%;
+  height:100%;
+}
+
+/* main-img link */
+#home {
+   border-top:none;
+}
+
+.section-container {
+  z-index:0;
+  position: relative;
+}
+
+.section {
+  width:100%;
+  background-color: #DEEDF0;
+  font-family: Poppins;
+}
+
+.heading {
+  font-weight: bolder;
+}
+
+.img-section {
+  background-image: url("../Images/section-background.png");
+  background-size: cover;
+}
+
+.section-border {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+#turizam-zivinice {
+  position:absolute;
+}
+
+#kh-obiljezja-zivinice {
+  position:absolute;
+  display:none;
+}
+
+#prirodne-zivinice {
+  position:absolute;
+  display:none;
+}
+
+#atrakcije-zivinice{
+  position:absolute;
+  display:none;
+}
+
+/* Section Images */
+
+.image-style {
+  max-width:100%;
+  max-height:100%;
+  padding:5%;
+}
+
+#priluk {
+  margin-top:20%;
+}
+
+#stecci {
+  margin-top:20%;
+}
+
+#toplice {
+  margin-top:25%;
+}
+
+#basigovci {
+  margin-top:15%;
+}
+
+#mackovac {
+  margin-top:15%;
+}
+
+
+/* Aside Section */
+.aside-box {
+  text-align: center;
+}
+
+.grb {
+  height: 15%;
+  width: 50%;
+  margin:90% 20% 10% 20%;
+}
+
+.hidden {
+  display:none;
+}
+
+@media screen and (max-width: 500px) {
+  .aside-box {
+    display:none;
+  }
+
+  .hidden {
+    display:block;
+    margin-top:150%;
+  }
+
+  .grb-hidden {
+    width:30%;
+    height:10%;
+  }
+
+  .navigation {
+    width:20% !important;
+  }
+
+  .nav {
+    margin-top: 30%;
+  }
+  .nav-link {
+    padding:0 !important;
+    padding: 5% 0% !important;
+    margin-right:50% !important;
+  }
+
+  .nav-item {
+    margin-bottom:5%;
+  }
+
+  .btn {
+    padding:5% 0% !important;
+    width:110% !important;
+    font-size: 14px !important;
+    margin-right:20% !important;
+  }
+
+  .gradovi {
+    width:50% !important;
+    margin-left:0%;
+  }
+
+  .pocetna {
+    width: 50% !important;
+  }
+
+  h1 {
+    font-size:14px !important;
+    margin-left:2%;
+  }
+
+  .grb {
+    margin:0;
+    margin-bottom:5%;
+  }
+
+}

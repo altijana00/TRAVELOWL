@@ -1,0 +1,57 @@
+
+/* Big Box Section */
+.big-box {
+  background-image: url("../Images/background.png");
+  background-size: cover;
+}
+
+.info-text {
+
+  margin: 0% 13% 0% 13%;
+  font-size: 18px;
+  line-height: 2.5rem;
+  padding: 5%;
+  font-family: 'Poppins';
+  font-weight:bold;
+
+}
+
+#small-text {
+  font-size: 12px;
+    font-family: 'Poppins';
+}
+
+/* Small Box Section - Aside Section */
+.small-box {
+  background-color: #1EAE98;
+}
+
+
+
+/* For smaller devices - mobile devices up to 500px of width */
+@media screen and (max-width: 500px) {
+
+  .info-text {
+    margin: 25% 0% 0% 0%;
+    font-size: 14px;
+    line-height: 1.5rem;
+    padding-top: 15%;
+  }
+
+  .pocetna {
+    width:auto !important;
+  }
+
+  .aside-header {
+    display:none;
+  }
+
+  .icon {
+    margin:0 !important;
+    font-size: 75px !important;
+  }
+
+  .small-box {
+    padding-top: 60%;
+  }
+}

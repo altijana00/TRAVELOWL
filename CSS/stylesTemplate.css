@@ -1,0 +1,41 @@
+/* HTML Elements */
+html,body {
+  width:100%;
+  height: 100%;
+}
+
+/* Main Box - Container for Big Box and Small Box/Aside Section */
+.pocetna {
+  margin: 2%;
+  width:7%;
+}
+
+.row {
+  height:100%;
+}
+
+.container-fluid {
+  height:100%;
+  width:100%;
+}
+
+/* Big Box */
+.big-box {
+  height: 100%;
+}
+
+/* Small Box/Aside Section */
+.small-box {
+  height: 100%;
+  text-align: center;
+}
+
+.aside-header {
+  margin-top: 90%;
+}
+
+.icon {
+  margin: 20% 20%;
+  align: center;
+  font-size: 100px;
+}

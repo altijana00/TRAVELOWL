@@ -1,0 +1,89 @@
+/* HTML Elements */
+h5, p {
+  color: #374045;
+  margin: 20%;
+}
+
+/* Main Box - Container for Big Box and Small Box/Aside Section */
+.row {
+  margin: 20%;
+}
+
+/* Big Box - Team Section */
+.big-box {
+
+}
+
+.container-team {
+  height: 80%;
+  width: 80%;
+  background-image:url("../Images/background.png");
+  background-size:cover;
+  margin-left: 10%;
+  border: 1px solid black;
+}
+
+.team-header {
+  margin: 30% 0% 0% 10%;
+  font-family: 'Montserrat';
+  letter-spacing: 1rem;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.team-img {
+  padding: 5% 20% 0% 20%;
+  margin-bottom: 5%;
+}
+
+.fa-angle-left, .fa-angle-right {
+  color: black;
+  font-size: 40px;
+}
+
+/* Small Box - Aside Section */
+.small-box {
+  background-color: #39A2DB;
+
+}
+
+.team-info{
+  line-height: 1rem;
+}
+
+
+/* For smaller devices - mobile devices up to 500px of width */
+@media screen and (max-width: 500px) {
+
+  .aside-header {
+    display:none;
+  }
+
+  .small-box {
+    padding-top:60%;
+  }
+
+  .icon {
+    font-size: 70px !important;
+    margin: 20% 10% 0% -10% !important;
+  }
+
+  .team-header {
+    margin: 60% 0% 0% 10%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .pocetna {
+    width: auto !important;
+  }
+
+  .container-team {
+    width:100%;
+    margin:0;
+  }
+}

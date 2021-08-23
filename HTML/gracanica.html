@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Travel Owl - Gracanica </title>
+  <link rel="icon" type="image/png" href="../Images/Gracanica/gracanica-icon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../CSS/stylesGracanica.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Bootstrap Stylesheets -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"> </script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-2 navigation">
+        <div class="fixed">
+          <a href="gradovi.html">
+            <button type="button" class="btn btn-outline-dark btn-lg gradovi">
+              <i class="fas fa-long-arrow-alt-left"></i>
+              Gradovi
+            </button>
+          </a>
+          <a href="index.html">
+            <button type="button" class="btn btn-outline-dark btn-lg pocetna">
+              <i class="fas fa-home"></i>
+            </button>
+          </a>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">
+                <button type="button" class="btn btn-dark btn-lg nav-button">
+                  Home
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#turisticka-zajG">
+                <button type="button" onclick="showSection('turisticka-zajG');" class="btn btn-outline-dark btn-lg nav-button">
+                  Turistička zajednica
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#historijaG">
+                <button type="button" onclick="showSection('historijaG');" class="btn btn-outline-dark btn-lg nav-button">
+                  Historija grada
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#kh-obiljezjaG">
+                <button type="button" onclick="showSection('kh-obiljezjaG');" class="btn btn-outline-dark btn-lg nav-button">
+                  Kulturno-historijska <br /> obilježja
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#prirodne-ljG">
+                <button type="button" onclick="showSection('prirodne-ljG');" class="btn btn-outline-dark btn-lg nav-button">
+                  Prirodne ljepote
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#uocG">
+                <button type="button" onclick="showSection('uocG');" class="btn btn-outline-dark btn-lg nav-button">
+                  Umjetnički <br /> obrazovni centar
+                </button>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="fixed hidden">
+          <img src="../Images/Gracanica/gracanica-grb.png" class="grb grb-hidden" alt="">
+          <h1> Gračanica </h1>
+        </div>
+      </div>
+      <div class="col-lg col main-box">
+        <div class="section" id="home">
+          <img src="../Images/Gracanica/gracanica.jpg" alt="" class="main-img">
+        </div>
+        <div class="section-container">
+          <div class="section img-section" id="turisticka-zajG">
+            <h3 class="heading">Turistička zajednica </h3>
+            <img src="../Images/Gracanica/tur-zajednica.jpg" alt="" class="img-tur-zajednica">
+            <p class="tur-info"> Turistička zajednica Grada Gračanica osnovana je 14.02.2020.godine a Turistički ured zvanično je otvoren u decembru 2020.godine.
+              TZG Gračanica bavi se promocijom i uređenjem turističkih vrjednosti, te promocijom različitih vrsta turizma.</p>
+            <pre>
+                 Osman-kapetanova medresa br.13
+                               75 320 Gračanica
+                   mail: tzggracanica@gmail.com
+                        tzggracanica@bih.net.ba
+                                mob:061/054-596
+            </pre>
+          </div>
+          <div class="section" id="historijaG">
+            <h3 class = "heading"> Historija </h3>
+            <p> Gračanica ima bogatu kulturno-historijsku prošlost. Na njenom širem području tragove svog prisustva i kulture su ostavili neolitski čovjek, Iliri, Kelti, Rimljani, Slaveni, Osmanlije i Austrijanci. <br />
+              Naselje Gračanica je nastalo u srednjem vijeku, u blizini rudnika željeza. <br /> Oko 1520 godine dolazi pod osmansku upravu. <br /> Status kasabe (gradskog naselja) dobiva 1548. godine. Središtem prostranog kadiluka postaje 1572.
+              godine.
+              Oko 1600. godine postaje značajno bosansko središte trgovine i zanatstva i ima čaršiju i najmanje osam mahala, i isto toliko džamija i mesdžida.
+              <br /> Najveći procvat Gračanica je doživjela krajem 17. vijeka kada se u nju, nakon pada Budima 1686. godine doselio Ahmed-paša Budimlija koji je obnašao značajne funkcije i za čije ime se vezuje izgradnja nekoliko značajnih objekata
+              po
+              kojima je čaršija i danas prepoznatljiva. <br />
+              Na početku 20. vijeka u Gračanici je bilo 11 džamija, pravoslavna i katolička crkva i jevrejski templ (sinagoga) što svjedoči o multietničnosti i multikonfesionalnosti ovog grada.
+            </p>
+          </div>
+          <div id="kh-obiljezjaG">
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h3 class = "heading"> Kulturno-historijska obilježja </h3>
+                  <h4> Sahat – kula </h4>
+                  <p> Utemeljiteljem sahat-kule u Gračanici se smatra Ahmed-paša Budimlija.
+                    Ne zna se tačno godina njene izgradnje ali se smatra da je sagrađena na samom kraju 17. ili
+                    početkom 18. vijeka. Predstavlja kulturno-historijski objekat star oko 300 godina.
+                    Visoka je 27 m što je čini trećom po visini u Bosni i Hercegovini.
+                    Godine 2002. proglašena je nacionalnim spomenikom Bosne i Hercegovine. </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/sahat-kula.jpg" alt="Sahat - kula" id="kula" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/mostLjubaviGracanica.jpg" alt="Most ljubavi" id="most" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Most Ljubavi </h4>
+                  <p> Most ljubavi u Gračanici svečano je otvoren u novembru 2020. godine.
+                    Projekat ovog mosta inicirali su mladi i uz pomoć gradske uprave i realizirali.
+                    Most kao nova turistička atrakcija grada karakteriše crvena boja kao boja ljubavi i šest na njemu nadograđenih srca.
+                    Mjesto je posebne važnosti za one koji se vole, zaljubljenih, supružnika i prijatelja koji na tom mjestu simbolično „zaključavaju“ svoju ljubav.
+                    Običaj zaključavanja ljubavi bio je prisutan u Bosni i Hercegovini još u 18 vijeku.</p>
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Centralni gradski park </h4>
+                  <p> Centralni gradski park kao naelitniji dio grada obilelježavaju dva spomenika vezana za
+                    NOB-u 1941.- 1945. godine i socijalističku Jugoslaviju. To su spomen kosturnica i spomen bista Josipu Brozu Titu.
+                    U spomen kosturnici su 7. aprila 1955. godine, na desetogodišnjicu oslobođenja Gračanice od fašizma,
+                    sahranjeni posmrtni ostaci 121 borca NOR-a. Autor rješenja spomen kosturnice je akademski vajar Alfred Filc iz Zagreba.
+                    Na Dan državnosti Bosne i Hercegovine 25. novembra 2008. godine u parku je podignuta spomen bista
+                    Josipu Brozu Titu. Inicijativu za njeno podizanje pokrenulo je gračaničko udruženje „Josip Broz Tito“.
+                  </p>
+                </div>
+                <div class="col-lg-3">
+                  <img src="../Images/Gracanica/spomenikNOR.jpg" alt="Spomenik-NOR" id="spomenik" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/ciro.jpg" alt="Ćiro" id="ciro" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Gračanički Ćiro </h4>
+                  <p> Ćiro u prevodu znači parna lokomotiva koja je pokretala voz.
+                    Austrougarske vlasti su, iz vojnih i ekonomskih interesa, u periodu od 1895. do 1898. godine projektovale
+                    i izgradile uskotračnu željezničku prugu Gračanica – Karanovac kao odvojak od pruge Doboj – Tuzla – Simin Han.
+                    Pruga je bila dužine 4010 m, puštena je u saobraćaj 1. januara 1898. godine.
+                    Službeno je ukinuta 1. novembra 1967. godine. U blizini se nalazila i zgrada Željeznične stanice.
+                    Jedan je od simbola grada. Postavljen je na improvizirane tračnice uskog kolosijeka. </p>
+                </div>
+
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Srednjovjekovni grad Soko </h4>
+                  <p> Grad se nalazi u naselju Soko oko 5 km sjeveroistočno od Gračanice.
+                    Nalazi se na padinama koje se spuštaju izvorišnom djelu rijeke Sokoluše, u sredini prirodne zavale
+                    koju okružuju južni obronci planine Trebave. Pozicioniran je na uzvišenju građenom od vulkanske stijene
+                    dijabaza visokoj oko 40 m. Naselje Soko je jedno od najstarijih na području grada Gračanica.
+                    U doba srednjovjekovne bosanske države, kraljevski grad Soko imao je veoma važnu ulogu u odnosima
+                    između bosanske kraljevske dinastije Kotromanića i dinastije mađarskih kraljeva i krupnih feudala
+                    sjeverno od Save. Godine 2003. Stari grad Soko proglašen je nacionalnim spomenikom Bosne i Hercegovine.
+                    Godine 2020. izgrađen je pristupni put do grada.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/soko.jpg" alt="Soko" id="soko" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section ">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/medresa.jpg" alt="Osman-kapetanova medresa" id="medresa" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Osman-kapetanova medresa </h4>
+                  <p>
+                    Osman-kapetanovu medresu osnovao je 1800. godine Osman-kapetan, otač čuvenog Husein-kapetana
+                    Gradaščevića, Zmaja od Bosne, čuvenog vojskovođe i borca za autonomiju Bosne. Dominira centrom grada i
+                    ukrašava ga. Današnja zgrada Osman-kapetanove medrese potječe iz austrougarskog perioda iz 1889. godine
+                    i predstavlja lijep primjer tzv. pseudomaurskog stila. Zgrada medrese je imala dershanu-središnju
+                    predavaonicu, zatim prostorije za muderisa, biblioteku i kuhinju, te sobe za učenike. Medresa je
+                    prestala sa radom 1945. godine. Poslije Drugog svjetskog rata zgrada medrese je pretvorena u
+                    Dom kulture. Danas je u vlasništvu IZ-e.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Konak ili Vijećnica </h4>
+                  <p> Zgrada je, dolaskom austougarske uprave, prvobitno izgrađena 1887. godine kao Konak da bi 1891.
+                    godine pretvorena u zgradu Vijećnice. Za vrijeme austrougarske uprave služi kao uprava kotara i
+                    sud, izmeđa dva rata za upravu sreza, a iza Drugog svjetskog rata za upravu grada Gračanica.
+                    Danas je u njoj Gradonačelnik i neke gradske službe. Stilski posmatrajući svojevrsni je „spoj
+                    Zapada i Istoka“, odnosno spoj načina građenja za vrijeme austrougarske uprave kojeg karetkteriše
+                    kombinovanje elemenata klasičnog preporoda i pseudomaurskog stila. Više puta tokom historije je
+                    obnavljana. Komisija za očuvanje nacionalnih spomenika 2009. godine proglasila je „Historijsku
+                    građevinu Konak-Vijećnica u Gračanici“ nacionalnim spomenikom Bosne i Hercegovine.
+
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/konak.jpg" alt="Konak-Vijećnica" id="konak" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/sarenaDzamijaGracanica.jpg" alt="Sarena dzamija" class="dzamija image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Šarena džamija  </h4>
+                  <p>
+                    Poznata je u narodu i kao Mejdan Džedid džamija. Kako se predpostavlja prva izgradnja ove džamije je
+                     bila u 16. vijeku a tokom vremena je više puta i rušena i obnavljana. Prvi siguran spomen džamije nalazi se
+                     u vakufskim evidencijama iz 1763. godine. Nekada se nalazila na lijevoj obali Sokoluše a zbog poplava je
+                     ponovo izgrađena na desnoj obali na nešto višem zemljištu.
+                     Svečano proklanjavanje ove džamije je bilo 1933. godine.
+                     Zbog dotrajalosti i naraslih potreba džemat ove džamije je početkom 1990. godine odlučio da na njenom
+                      mjestu izgradi veću i kompleksniju građevinu sa više funkcija i tada je dobila sadašnji izgled.
+                      Konačni radovi na džamiji su završeni 2008. godine.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+
+                <div class="col-lg">
+                  <h4> Ahmed-pašina džamija </h4>
+                  <p>
+                    U narodu je poznata i kao bijela ili čaršijska džamija. Izgradio je Ahmed-paša Budimlija.
+                    Današnji izgled dobiva u periodu od 1914. – 1916. godine kada se gradi od kamena, dobiva armirano-betonsko
+                    kube i na taj način postaje potkupolna džamija. Džamijska munara se 1936. godine uslijed nevremena
+                    srušila ali je brzo izgrađena nova. Godine 1963. džamija je dobila i abdesthanu sa 12 česama a
+                    krajem osamdesetih izgrađena je nova abdesthana. Završetak radova na izgradnji nove munare i
+                    opravci džamije obilježen je 10. i 11. oktobra 1997. godine nizom vjerskih i kulturno-umjetničkih
+                    manifestacija. Glavna je ili centralna džamija u Gračanici.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/ahmed-pasina-dzamija.jpg" alt="Ahmed-pasina dzamija" class="dzamija image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/pravoslavna-crkva.jpg" alt="Pravoslavna crkva" id="p-crkva" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Pravoslavna crkva </h4>
+                  <p> Pravoslavna crkva ili Parohijski hram Vaznesenja gospodnjeg počeo se graditi 1921. a gradnja
+                    je završena 1926.godine. Hram je osvećen 1925.godine. Crkve su poznate po svom zidnom slikarstvu
+                    po svom živopisu. Živopis Hrama izveden je u periodu od 1986. do 1989. godine a uradio ga je
+                    akademski slikar Dimitrij Ridžiski. U crkvi se nalazi i ikonostas zid koji je ukrašen ili oslikan
+                    ikonama. Ikonostas je izveden od drveta, nosi 12 ikona koje su nastale pod utjecajem ruskog baroka.
+                    Proglašena je nacionalnim spomenikom Bosne i Hercegovine 2013. godine. U 2020. godini je urađen
+                    pristupni put, ofarbana vrata, skinuta dotrajala ograda, uređeno drveće u dvorištu i zamijenjeni su
+                    dijelovi limenog krova na istočnoj strani objekta. Pravoslavno stanovništvo Gračanice se sahranjuje
+                    na pravoslavnom groblju Perkine bašče.
+
+                  </p>
+                </div>
+
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+
+                <div class="col-lg">
+                  <h4> Katolička crkva </h4>
+                  <p>  Sagrađena je 1921. godine u neoromaničkom stilu, te posvećena Uznesenju blažene djevice Marije.
+                    Iako je dosta skromnih dimenzija, više nalik kapeli nego li crkvi ipak plijeni pažnju svojom
+                    arhitektonskom skladnošću. Više puta je obnavljanja, a kako je katolička zajednica u Gračanici
+                    prilično malobrojna, u dobrovoljnim prilozima u tu svrhu učestvovale su Gračanlije raznih konfesija.
+                    Crkva pripada Nadbiskupiji Vrhbosanskoj odnosno župi Presvetog srca Isusova Doboj. Danas se o ovoj
+                    crkvi brine Tomislav Toman i svaki dan se sa njenog zvonika se čuju zvona. Katoličko stanovništvo
+                    Gračanice sahranjuje se na katoličkom groblju ispod Vjetrenice.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/katolicka-crkva.jpg" alt="Katolička crkva" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/spomenikOOR.jpg" alt="Spomenik-OOR" id="spomenik2" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Centralno spomen-obilježje  </h4>
+                  <p>
+                    Na dan 25.maja 2010. godine, koji se u Gračanici obilježava kao Dan odbrane, nakon
+                    višegodišnje aktivnosti boračkih organizacija i nadležnih organa općine Gračanica, svečano
+                     je otkriveno novosagrađeno spomen-obilježje za 326 poginulih boraca i šehida i 148
+                     ubijenih civila u odbrambeno-oslobodilačkom ratu 1992.-1995. godine. Spomen-obilježje je locirano
+                     na radijalnom platou u parku ispred zgrade gradske uprave i objekata gračaničkih srednjih škola.
+                     Zajedno sa kružno postavljenim klupama na suprotnim stranama, taj plato je širine 16 m.
+                     Spomen-obilježje se sastoji od tri funkcionalne cjeline: centralnim dijelom dominira slavoluk kao
+                     simbol pobjede. S lijeve bočne strane slavoluka (gledano sa magistralne ceste) locirani
+                     su kameni panoi sa ispisanim imenima civilnih žrtava rata (ukupno četiri ploče), dok su na
+                    suprotnoj desnoj bočnoj strani ispisana imena poginulih boraca i šehida na osam kamenih
+                    panoa. Oko platoa, na kojem je lociran slavoluk, postavljene su klupe od klesanog kamena,
+                    visine 45 cm kao stilizacija amfiteatra.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="prirodne-ljG">
+            <div class="section">
+              <div class="row">
+                <div class="col-lg">
+                  <h3 class="heading"> Prirodne ljepote </h3>
+                  <h4> Vis i Sijedi krs </h4>
+                  <p> Vis kod Gračanice je najviši vrh planine Trebave sa 692 m nadmorske visine, nalazi se na
+                    udaljenosti oko 6 km sjeverno od Gračanice, neposredno iznad sela Babići. Nekoliko stotina metara
+                    istočno, kao dio istog masiva, je uzvišenje Sijedi krš sa 664 m nadmorske visine.
+                    Danas je Vis dobro uređeno izletište, na kojem se u većem dijelu godine održavaju razne kulturne,
+                    sportske i druge prigodne manifestacije.</p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/vis.jpg" alt="Vis" id="vis" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/terme.jpg" alt="Terme" id="terme" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Termalne vode </h4>
+                  <p> Termomineralne vode Terme Gračanica, pripadaju grupi ljekovitih voda sa bogatim i sadržajnim stavom
+                    u jonskom i gasnom pogledu, te pogodnom mineralizacijom. Na Termama su zastupljeni različiti sadržaji za djecu i odrasle, poput dječijeg igrališta, terena za odbojku, restorana i sobe za masažu. Naime, dokazano je na osnovu
+                    karakterističnog sastava i bakteriološke ispravnosti termomineralna voda pomaže pacijentima sa koštanim prelomima, nakon operacija kostiju, kod deformacija kičmenog stuba, te degenerativnih reumatskih, neuroloških i kožnih
+                    oboljenja, zatim posttraumatskih stanja, pojačava biligenezu izazivajući holeretičke efekte, smanjujući šećer u krvi, paralize,
+                    oboljenja jetre, žuči i žučnih kanala i drugih oboljenja. Termomineralna voda Terme djeluje i
+                    antiinflamotorno kod ginekoloških oboljenja, zatim kožnih oboljenja – ekcema, dermatitisa i
+                    psorijaze. Gračanica je zahvaljujući ovom kompleksu postala poznata kao centar banjsko-rekreativnog turizma.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Ratiš </h4>
+                  <p> Nalazi se na mjestu prijelaza sjeverne u sjeveroistočnu Bosnu. Oblika je planinsko-brdskog grebena.
+                    Srednji dio je najviši. Na najvišem vrhu prema tradiciji je od davnih vremena nalazi se jedno od
+                    najznačajnijih dovišta u sjevernoj i sjeveroistočnoj Bosni. Vjernici su se na vrhu Ratišu okupljali
+                    u vrijeme suša i molili se za kišu. Odatle i drugo ime za vrh Dovište.Molitve su poslije bez obzira
+                    na količinu oborina u toj godini postale tradicija pa ih se molilo redovno svake godine.
+                    Počinjale su prvog ponedjeljka u svibnju a završavale prvog ponedjeljka u kolovozu završnom dovom
+                    koja je okupljala i najviše vjernika. </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/ratis.jpg" alt="Ratiš" id="ratis" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Gracanica/monj.jpg" alt="Monj" id="monj" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Monj </h4>
+                  <p> Monj je visoko brdo koje se nalazi na području Grada Gračanica, u naselju Doborovci.
+                    Visok je 530 m/nm. “Prilikom radova na pošumljavanju brda, 1957, otkrivena je ostava od 39
+                    bronzanih predmeta. Predmeti su: narukvice, ogrlica, srpovi, koplja, keltovi.” Nalazi su datirani
+                    u mlađu fazu kasnog bronzanog doba. Na brdu Monj odvila se bitka partizanskih boraca iz 18.Hrvatske
+                    brigade i partizana Posavsko-trebavskog odreda sa njemačkim jedinicama, koje su 8.avgusta 1944. godine
+                    namjeravale presjeći važnu komunikaciju Gračanica - Orašje i tako zaposjesti ovom teritorijom.
+                    Tada je život za slobodu dalo petanest boraca, najviše iz Bosanskog Šamca, Gradačca i Modriče,
+                    među njima i mlada partizanka Mina Srna iz Čajniča. Osamdesetih godina prošlog vijeka, na brdu
+                    Monj je sagradjeni su spomen-obilježja koje svjedoči o hrabrosti mladih partizana. Petnaest ploča
+                    pričvršćenih na stijenama Monja, svjedoče o hrabrosti ljudi koji su branili ovo područje. </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="uocG">
+            <div class="section">
+              <div class="uoc-bimg">
+                <div class="container-uoc">
+
+                  <h1 id="uoc-header"> Umjetnički Obrazovni Centar</h1>
+                  <div class="row">
+                    <div class="col-lg">
+                      <p class="header-info">
+                        Futures Owls tim bio je u posjeti Umjetničkog obrazovnog centra u Gračanici. UOC je privatna
+                        ustanova čiji profesori imaju originalan pristup uvođenja djece u svijet muzike. Radi se o ustanovi
+                        koja fokus stavlja na praktičnu nastavu omogućavajuci svojim učenicima da osjete pravi duh muzike i nastupa
+                        pred publikom.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div id="uoc-carousel" class="carousel slide" data-ride="false">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100 uoc-img" src="../Images/Gracanica/uoc1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100 uoc-img" src="../Images/Gracanica/uoc2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100 uoc-img" src="../Images/Gracanica/uoc3.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100 uoc-img" src="../Images/Gracanica/uoc4.jpg" alt="Fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100 uoc-img" src="../Images/Gracanica/uoc5.jpg" alt="Fifth slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100 uoc-img" src="../Images/Gracanica/uoc6.jpg" alt="Sixth slide">
+                        </div>
+                        <a class="carousel-control-prev" href="#uoc-carousel" role="button" data-slide="prev">
+                          <span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#uoc-carousel" role="button" data-slide="next">
+                          <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="row uoc-info">
+
+                    <p>UOC je započeo kao ansambl osnovan 2012. godine nakon čega zapocinje narodni festival gdje su
+                      se svake godine organizovali koncerti. Lokacije su uglavnom bile 'gračanicka čarsija' i Bosanski
+                      Kulturni Centar u Gračanici. Nastojala se prvo privući pažnja te interesovanje prije samog
+                      osnivanja škole. Škola je nakon osnivanja promijenila nekoliko lokacija. <br /> <br />
+                      UOC trenutno ima 4 profesora i oko 30 učenika. Radi se o uzrastu između 8 i 14 godina iako
+                      ne postoji ograničenje kada je dob učenika u pitanju. Instrumenti koji su zastupljeni jesu
+                      razne vrste gitare, klavir, flauta, bubnjevi te harmonika.<br /> <br />
+                      Medju učenicima se formiraju bendovi. Svaki bend bira vrstu muzike koju želi svirati.
+                      Najzastupljenija vrsta jeste ex yu rock. Nakon izvježbane pjesme profesori sa učenicima prave
+                      audio snimak pjesme, zatim se bira lokacija na kojoj učenici imaju priliku snimiti svoj spot. <br /> <br />
+                      Kao što smo vec naveli, fokus se ne stavlja na teorijsku nastavu te učenju po notama. Učenici
+                      nakon kratkog perioda već počinju raditi na pjesmama koje vrlo brzo savladaju, te samim tim stiču
+                      osjećaj za ritam. Brojni koncerti im omogućavaju da osjete pravi duh javnog nastupa te kako to izgleda
+                      izvoditi pjesme pred većom publikom. Važno je napomenuti da učenici UOC-a vrlo ozbiljno shvataju
+                      ovaj zadatak te na scenu izlaze spremni ne znajući za tremu. <br /> <br />
+                      Oni napredniji učenici imaju priliku da sa svojim profesorima pišu autorske pjesme koje se
+                      također snimaju.<br /> <br />
+                      Trenutno nije uspostavljena škola pjevanja međutim, kako profesori imaju iskustva kada se
+                      radi o pjevanju i samim nastupima, razmišlja se o njenom uvođenju. <br /> <br />
+                      Naredni planovi uključuju organizovanje lokalnih koncerata, te jedan od mogućih planova jeste
+                      nastup učenika na koncertima u drugim državama.
+                      Nadamo se da će ovi planovi uspjeti te im želimo puno sreće u njihovom radu. <br /> <br />
+                      Konkursi za nove učenike su uvijek aktivni te se možete prijaviti u bilo kojem trenutku. <br /> <br />
+                    </p>
+                    <h5> Saznajte više na: </h5>
+                    <div class="some-div">
+
+
+                      <a href="https://www.facebook.com/Umjetnički-Obrazovni-Centar-369560309725240/">
+                      <span class="link-icon">
+                      <i class="fab fa-facebook-square"></i>
+                      </span>
+                      </a>
+
+                      <a href="https://instagram.com/umjetnicki_obrazovni_centar?utm_medium=copy_link">
+                      <span class="link-icon">
+                      <i class="fab fa-instagram"></i>
+                      </span>
+                      </a>
+  </div>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 aside-box">
+        <div class="fixed">
+          <img src="../Images/Gracanica/gracanica-grb.png" class="grb" alt="Grb Gračanice">
+          <h1> Gračanica </h1>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="../JS/index.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Travel Owl - Kladanj </title>
+  <link rel="icon" type="image/png" href="../Images/Kladanj/kladanj-icon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../CSS/stylesKladanj.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Bootstrap Stylesheets -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"> </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-2 navigation">
+        <div class="fixed">
+          <a href="gradovi.html">
+            <button type="button" class="btn btn-outline-dark btn-lg gradovi">
+              <i class="fas fa-long-arrow-alt-left"></i>
+              Gradovi
+            </button>
+          </a>
+          <a href="index.html">
+            <button type="button" class="btn btn-outline-dark btn-lg pocetna">
+              <i class="fas fa-home"></i>
+            </button>
+          </a>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">
+                <button type="button" class="btn btn-dark btn-lg nav-button">
+                  Home
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#jp-karaula-kladanj">
+                <button type="button" onclick="showSectionKladanj('jp-karaula-kladanj');" class="btn btn-outline-dark btn-lg nav-button">
+                  JP "Karaula" d.o.o
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#historija-kladanj">
+                <button type="button" onclick="showSectionKladanj('historija-kladanj');" class="btn btn-outline-dark btn-lg nav-button">
+                  Historija
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#kh-obiljezja-kladanj">
+                <button type="button" onclick="showSectionKladanj('kh-obiljezja-kladanj');" class="btn btn-outline-dark btn-lg nav-button">
+                  Kulturno-historijska <br /> obilježja
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#prirodne-kladanj">
+                <button type="button" onclick="showSectionKladanj('prirodne-kladanj');" class="btn btn-outline-dark btn-lg nav-button">
+                  Prirodne ljepote
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#izletista-kladanj">
+                <button type="button" onclick="showSectionKladanj('izletista-kladanj');" class="btn btn-outline-dark btn-lg nav-button">
+                  Izletišta
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="fixed hidden">
+          <img src="../Images/Kladanj/kladanj-grb.png" class="grb grb-hidden" alt="">
+          <h1> Kladanj </h1>
+        </div>
+      </div>
+      <div class="col-lg col main-box">
+        <div class="section" id="home">
+          <img src="../Images/Kladanj/kladanj1.jpg" alt="" class="main-img">
+        </div>
+        <div class="section-container">
+          <div class="section img-section" id="jp-karaula-kladanj">
+            <h3 class="heading"> JP “Karaula” d.o.o </h3>
+
+            <p class="tur-info"> JP “Karaula” d.o.o za turizam, proizvodnju i usluge, Kladanj, stavljajući pred sebe ciljeve razvoja lokalne zajednice, aktivno radi na okupljanju aktera koji mogu doprinijeti razvoju turizma u Općini.</p>
+
+            <pre>
+                     Kladanjskih brigada br 3
+                               75 280 Kladanj
+                    mail: jpkaraula@gmail.com
+                              tel:035/622-210
+                </pre>
+          </div>
+          <div class="section img-section" id="historija-kladanj">
+            <h3 class="heading"> Historija </h3>
+            <p>
+              Grad Kladanj prvi put se spominje u 12. stoljeću, tačnije 1138. godine, u spisima mađarskog velikana
+              Krisztofa Emerika, te kroz cijeli srednji vijek postoji kao urbana sredina.
+              U okviru Osmanskog carstva Kladanj je spomenut 1557. godine kao kasaba u okviru Sarajevskog kadiluka,
+              da bi nešto kasnije postao samostalan kadiluk, u čiji sastav ulazi i Olovo.
+              U vrijeme Austro-ugarske organizacija je ostala gotovo ista kao ona u osmanskom periodu s tim što je
+              umjesto džemata, nahija i sandžaka došlo do formiranja općina, kotara i okruga.
+              Kladanj postaje važno saobraćajno čvorište, a bogatstvo šumom je opredijelilo privrednu aktivnost
+              na ovim prostorima i zanimanje stanovnika. Podižu se škole, javni objekti i otpočinje eksploatacija
+              šumskog blaga.
+              Grad Kladanj je u socijalizmu bio poznat i po brojnim mineralnim vrelima i vodama kojima su pripisivana
+              ljekovita svojstva.
+              Područje je bogato šumom, dobre izvorske vode su prisutne na skoro svim područjima Kladnja.
+              Prostorno Općina Kladanj zauzima 325 km² i druga je općina po površini na prostoru Tuzlanskog kantona.
+            </p>
+          </div>
+          <div id=kh-obiljezja-kladanj>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h3 class="heading"> Kulturno historijska obilježja </h3>
+                  <h4> Djevojačka pećina </h4>
+                  <p>
+                    Jedna je od najinteresantnijih bosansko-hercegovačkih pećina i nalazi se u mjestu Brateljevići na
+                    području Općine Kladanj.
+                    Ulaz u pećinu je oko 30m visoko iznad desne obale rječice Bukovice, pritoke rijeke Drinjače.
+                    Ima prostranu dvoranu sa izvorom u njenom najudaljenijem kutku.
+                    Naziv, “Djevojačka” dobila je po hrabroj djevojci koja je tokom noći ušla sama u pećinu da zahvati
+                    vode sa izvora. Kao dokaz o svom poduhvatu trebala je da zabode vreteno kraj izvora. Vretenom je
+                    zakačila kraj svoje haljine. Kad je htjela ustati osjetila je da je nešto vuče i od straha joj je
+                    srce prepuklo. Djevojka je neposredno uz izvor i sahranjena.
+                    Djevojačka pećina je danas jedno od najznačajnijih dovišta u Bosni i Hercegovini i to takozvanih
+                    kišnih dova, koja se održava poslednje nedjelje u mjesecu avgustu.
+                    Ova pećina ima arheološku vrijednost. Skoro izvedeno istraživanje ove pećine otkrilo je pećinske
+                    crteže za koje se pretpostavlja da potiču iz antičkog doba.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Kladanj/djevojacka-pecina.jpg" alt="Djevojačka pećina" id="pecina" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Kladanj/stecci.jpg" alt="Stećci" id="stecci" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Stećci </h4>
+                  <p> Kao posebna turistička atrakcija, ali ujedno i dokaz da Kladanj kroz cijeli srednji vijek postoji
+                    kao urbana sredina, su srednjevijekovni nadrgrobni spomenici-stećci. Na području općine Kladanj
+                    nalazi se veliki broj stećaka. Ovi nadgrobni spomenici potiču iz perioda Srednjeg vijeka.
+                    Ukupan broj stećaka evidentiranih 1990. godine je 598 komada, raspoređenih na 57 lokacija u 25
+                    naselja. Na osnovu tih podataka Kladanj je najbogatija općina sa ovom vrstom kulturno-historijskih
+                    spomenika, na prostoru Tuzlanskog kantona, odnosno sjevero-istočne Bosne.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Hadži Bali-begova džamija (Kuršumlija) </h4>
+                  <p> Na lijevoj obali rijeke Drinjače u samoj čaršiji, iz perioda Osmanskog carstva, nalazi se
+                    potkupolna kamena Hadži Bali-begova džamija (Kuršumlija).
+                    Kuršumliju džamiju u Kladnju podigao je Hadži Bali-beg, u periodu 1544/1545. godine.
+                    To je jedina očuvana podkupolna džamija iz najstarijeg osmanskog perioda u sjeveroistočnoj Bosni
+                    i najstarija je sačuvana potkupolna džamija u Bosni i Hercegovini u periodu agresije
+                    1992-'95. godine. Komisija za očuvanje nacionalnih spomenika u Bosni i Hercegovini
+                    marta 2005. godine, donijela je Odluku kojom se Graditeljska cjelina - Kuršumlija
+                    (Hadži Bali-begova) džamija u Kladnju proglašava nacionalnim spomenikom Bosne i Hercegovine.
+                  </p>
+                </div>
+                <div class="col">
+                  <img src="../Images/Kladanj/kursumlija.jpg" alt="Kuršumlija" id="dzamija" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Kladanj/katolicka-crkva.jpg" alt="Katolička crkva" class="crkva image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Katolička crkva Ivana Krstitelja </h4>
+                  <p> Katolička crkva Ivana Krstitelja, sagrađena je 1937. godine. Inicijator gradnje, na čijem je
+                    zemljištu crkva sagrađena, bio je Ivan Čaja koji se u Kladnj doselio iz Livna. Gradnju crkve
+                    pomoglo je nekoliko imućnih porodica iz Kladnja. Oko 20 godina crkva nije bila u funkciji zbor
+                    obrušavanja, da bi bila obnovljena 1998. godine, a samom otvaranju prisustvovao je Kardinal
+                    Vinko Puljić.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Pravoslavna crkva Svetog velikomučenika Dimitrija </h4>
+                  <p> Pravoslavna crkva Svetog velikomučenika Dimitrija sagrađena je u Kladnju 1902. godine,
+                    a izgorjela je prilikom avionskog bombardiranja Kladnja 1943. godine. Crkva je, na drugom
+                    lokalitetu obnovljena 1986. godine i od tada se nalazi pod ingerencijom Zvorničko-tuzlanske eparhije.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Kladanj/pravoslavna-crkva.jpg" alt="Pravoslavna crkva" class="crkva image-style">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="prirodne-kladanj">
+            <div class="section">
+              <div class="row">
+                <div class="col-lg">
+                  <h3 class="heading"> Prirodne ljepote </h3>
+                  <h4> Bebravska pećina </h4>
+                  <p> Bebravska pećina je jedna od najljepših pećina u Bosni i Hercegovini.
+                    Bogatstvo i ljepotu ove pećine čine pećinski nakiti, stalaktiti i stalagmiti različitih oblika
+                    i veličina. Psebnu ljepotu joj daje potok koji protiče cijelom dužinom pećine i predstavlja
+                    posebnu atrakciju. Njena ljepota poredi sa poznatom Postojnskom jamom.
+                    Spada u red ponirućih pećina. Ulaz u pećinu nalazi se na 882 m nadmorske visine.
+                    Ukupna dužina do sada ispitanih pećinskih hodnika, uključujući i završnu galeriju iznosi cca 500m.
+                    Dubina pećine iznosi cca 50m izračunato od razine tla na samom ulazu u pećinu.
+                  </p>
+                </div>
+                <div class="col-lg-3">
+                  <img src="../Images/Kladanj/Bebravska-pecina.jpg" alt="Bebravska pećina" class="b-pecina image-style">
+                </div>
+                <div class="col-lg-3">
+                  <img src="../Images/Kladanj/Bebravska-pecina1.jpg" alt="Bebravska pećina" class="b-pecina image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="../Images/Kladanj/muska-voda2.jpg" alt="Muška voda" id="muska-voda" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Muška voda </h4>
+                  <p> Muška voda je ono po čemu je Kladanj poznat širom Evrope, pa i svijeta. Kladanj je oduvijek bio poznat po mineralnim i ljekovitim vrelima, od kojih je svakako najpoznatiji izvor Muške vode, kojem su se stoljećima pripisivale
+                    afrodizijačke moći i druga ljekovita svojstva, u smislu jačanja fizičke sposobnosti muškaraca. Ovaj izvor je u 17. stoljeću znameniti turski putopisac Evlija Ćelebija opisao kao “izvor mladosti”. Različite analize ove ljekovite
+                    mineralne vode, koje su vršene od 1968. godine, potvrdile su njenu ljekovitost i utvrdilo se da pozitivno djeluje na smanjenje krvnog pritiska i šećera u krvi, te da poboljšava cirkulaciju krvi, utječe na brže izlučivanje vode, te
+                    jača organizam. Nedaleko od izvora nalazi se istoimeni hotelski kompleks sa sportskim poligonima i nogometnim stadionom, koji je trenutno u fazi rekonstrukcije postojećih i izgradnji novih pratećih objekata, nakon čega će postati
+                    jedan od namodernijih objekata ove vrste na prostoru Bosne i Hercegovine.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Wia Ferrata </h4>
+                  <p> Wia Ferrata, planinarska staza u dužini 200 metara za uspinjanje uz stijenu Hotanski krš
+                    na lokalitetu pored puta za Mušku vodu.
+                  </p>
+                </div>
+                <div class="col-lg">
+                  <img src="../Images/Kladanj/wia-ferrata.jpg" alt="Wia Ferrata" class="image-style">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="izletista-kladanj">
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h3 class="heading"> Izletišta </h3>
+                  <h4> Izletište Bebrava </h4>
+                  <p> Izletište Bebrava se nalazi uz put koji vodi prema sportsko-rekreacionom centru Muška voda,
+                    a cijelom dužinom izletišta protiče rijeka Drinjača tako da se posjetioci tokom ljeta mogu
+                    osvježiti u čistoj vodi ove planinske riječe. Izletište je uređeno za kampere, sa drugim sadržajima
+                    kao što su igraonice za djecu i omladinu, tako da omogućuje boravak posjetilaca svih uzrasta.
+                    U blizini izletišta Bebrava je i prelijepo, prirodno jezero “Gorsko oko” u narodu poznato kao
+                    Paučko jezero, koje mami razlikošću svoje flore i faune.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Kladanj/paucko_jezero.jpg" alt="Paučko jezero" id="paucko" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Kladanj/studenac.jpg" alt="Izletište Studenac" class="izletiste image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Izletište Studenac </h4>
+                  <p> Izletište Studenac se nalazi uz put na zapadnom izlazu iz Kladnja u smjeru naseljenih mjesta
+                    Brateljevići i Tuholj, te sportsko-rekreacionom centru Muška voda i drugim turističkim kapacitetima
+                    kako što su Djevojačka i Brbravska pećina, izletišta Bebrava, Paučko jezero, itd. To je kultno
+                    mjesto gdje se u neposrednoj blizini grada okuplja i druži veliki broj generacija Kladnjaka.
+                    Izletište je prije nekoliko godina uređeno za prihvat većeg broja posjetilaca, sa stolovima,
+                    šadrvanom, lošištima za roštiljanje, spravama za igru djece, kao i uređenim izvorištem sa malim
+                    lučnim mostićem iznad vodotoka koji daje atraktivnost ovom mjestu.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Staza ski lift-Hendek </h4>
+                  <p> Lokalitet ski lifta Karaula, mimo zimske skijaške sezone, veoma je atraktivan i pogodan za
+                    izletnike, planinare kao i za prikupljanje ljekovitog bilja i gljiva. Visoka i gusta četinarska
+                    šuma kroz koje prolaze staza za šetnju, a koju krase čisti izvori vode pružaju turistima pravi
+                    ugođaj za boravak na ovom lokalitetu. Na potezu od polazne stanice Ski lifta pa do okretne stanice
+                    lifta koja se nalazi ispod uzvišenja Hendek, u dužini 2.500 metara, uređena je staza za pješačenje.
+                    Duž staze postoje uređene mjesta za odmor, 3 stola sa klupama i 2 šadrvana.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Kladanj/ski-lift.jpg" alt="Staza ski lift-Hendek" class="izletiste image-style">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 aside-box">
+        <div class="fixed">
+          <img src="../Images/Kladanj/kladanj-grb.png" class="grb" alt="Grb - Kladanj">
+          <h1 class="aside-header"> Kladanj </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../JS/index.js" charset="utf-8"></script>
+</body>
+
+</html>

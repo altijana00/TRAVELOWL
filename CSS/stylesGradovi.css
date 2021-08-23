@@ -1,0 +1,129 @@
+/* HTML Elements */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Main Box/Container */
+
+
+.row {
+  height: 100%;
+}
+
+.container-fluid {
+  height: 100%;
+  width: 100%;
+}
+
+/* Big Box - Gradovi */
+
+.pocetna {
+  margin: 2%;
+  width:7%;
+}
+.big-box {
+    background-image: url("../Images/section-background.png");
+    background-size:cover;
+  /* background-color: #F4F5DB; */
+  height: 100%;
+}
+
+.container-gradovi {
+  height: 80%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.col-grad {
+  border: 2px solid white;
+  padding-top: 5%;
+  font-family: 'Poppins';
+}
+
+.row-grad {
+  height: 50%;
+}
+
+.grad1 {
+  background-color: #709FB0;  FBE6C2
+  height: 100%;
+  text-align: center;
+}
+
+.grad2 {
+  background-color: #94EBCD;
+  height: 100%;
+  text-align: center;
+}
+
+.grad3 {
+  background-color: #94EBCD;
+  height: 100%;
+  text-align: center;
+}
+
+.grad4 {
+  background-color: #709FB0;
+  height: 100%;
+  text-align: center;
+}
+
+.box-link {
+  text-decoration: none;
+  color: #374045;
+}
+
+.box-link:hover {
+  color: gray;
+}
+
+.grb {
+  height: 55%;
+  width: 30%;
+  padding-bottom: 5%;
+}
+
+
+/* Small Box/Aside Section */
+.small-box {
+  background-color: #9DDFD3;
+  height: 100%;
+  text-align: center;
+}
+
+.aside-header {
+  margin-top: 90%;
+}
+
+.icon {
+  margin: 20% 20%;
+  align: center;
+  font-size: 100px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .grad1, .grad2, .grad3, .grad4 {
+    height:auto;
+  }
+
+  .aside-header {
+    display:none;
+  }
+
+  .small-box {
+    padding-top: 60%;
+  }
+
+  .icon {
+    margin:0;
+    font-size: 75px;
+    margin-right:50%;
+  }
+
+  .pocetna {
+    width:auto;
+  }
+}

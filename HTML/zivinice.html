@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Travel Owl - Živinice </title>
+  <link rel="icon" type="image/png" href="../Images/Zivinice/zivinice-icon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../CSS/stylesZivinice.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Bootstrap Stylesheets -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"> </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-2 navigation">
+        <div class="fixed">
+          <a href="gradovi.html">
+            <button type="button" class="btn btn-outline-dark btn-lg gradovi">
+              <i class="fas fa-long-arrow-alt-left"></i>
+              Gradovi
+            </button>
+          </a>
+          <a href="index.html">
+            <button type="button" class="btn btn-outline-dark btn-lg pocetna">
+              <i class="fas fa-home"></i>
+            </button>
+          </a>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">
+                <button type="button" class="btn btn-dark btn-lg nav-button">
+                  Home
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#turizam-zivinice">
+                <button type="button" onclick="showSectionZivinice('turizam-zivinice');" class="btn btn-outline-dark btn-lg nav-button">
+                  Turizam
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#kh-obiljezja-zivinice">
+                <button type="button" onclick="showSectionZivinice('kh-obiljezja-zivinice');" class="btn btn-outline-dark btn-lg nav-button">
+                  Kulturno-historijska <br /> obilježja
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#prirodne-zivinice">
+                <button type="button" onclick="showSectionZivinice('prirodne-zivinice');" class="btn btn-outline-dark btn-lg nav-button">
+                  Prirodne ljepote
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#atrakcije-zivinice">
+                <button type="button" onclick="showSectionZivinice('atrakcije-zivinice');" class="btn btn-outline-dark btn-lg nav-button">
+                  Atrakcije
+                </button>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="fixed hidden">
+          <img src="../Images/Zivinice/zivinice-grb.png" class="grb grb-hidden" alt="">
+          <h1> Živinice </h1>
+        </div>
+      </div>
+      <div class="col-lg col main-box">
+        <div class="section" id="home">
+          <img src="../Images/Zivinice/zivinice.jpg" alt="" class="main-img">
+        </div>
+        <div class="section-container">
+          <div id="turizam-zivinice" class="section-border">
+            <div class="section img-section">
+              <h3> Turizam - Živinice </h3>
+              <p> Iako na nivou grada Živinice nije zvanično uspostavljena turistička organizacija,
+                sve informacije vezane za turistički razvoj grada možete saznati na oficijelnoj stranici grada.
+                <a href="https://gradzivinice.ba/turizam/"> Grad Živinice </a>
+              </p>
+            </div>
+          </div>
+          <div id="kh-obiljezja-zivinice" class="section-border">
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h3 class="heading"> Kultrno-historijska obilježja </h3>
+                  <h4> Stećci </h4>
+                  <p> Veliki broj stećaka i nekropola (oko 300), koji predstavljaju jednu od najzanimljivijih
+                    i najznačajnijih pojava u kulturi i historiji srednjovjekovne Bosne. Posebnu atrakciju predstavlja
+                    Stećak «Vrpolje» u MZ Đurđevik, koji je ujedno i jedini stećak sa pisanim tekstom. </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Zivinice/stecci-basigovci.jpg" alt="Stećci" class="image-style" id="stecci">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Zivinice/dzebarska.jpg" alt="Džebarska dzamija" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Džamija u Džebarima </h4>
+                  <p> Najstarija džamija na području Tuzlanskog kantona, Džamija u Džebarima,
+                    koja datira iz 16. stoljeća kao i Džebarski muzej koji je izgrađen uz
+                    pomoć donacije Vlade Republike Turske. </p>
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Stara džamija Šerići </h4>
+                  <p> U džamijskom dnevniku je navedeno da su džamiju u Šerićima
+                    gradili Italijani, braća Ivan i Pepi Piccolloti, iz Breza kod Kiseljaka. Gradnja
+                    džamije je započeta 1926. godine, a završena 1928. godine.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Zivinice/serici.jpg" alt="Džamija Šerići" class="image-style">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="prirodne-zivinice" class="section-border">
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h3 class="heading"> Prirodne ljepote </h3>
+                  <h4> Izvorište Toplice </h4>
+                  <p> Izvorište Toplice, termalni izvori na Topliĉkom polju u jugoistoĉnom dijelu Grada Živinice
+                    stvorili su specifična jezerca i vodotok pun malih slapova koji su uz topla isparenja i plodno
+                    zemljište omogućili nastajanje jedinstvene flore i faune. Područje oko izvorišta Toplice koje ima
+                    stalnu temperaturu vode 22 stepena do danas je ostalo nezagađeno. </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Zivinice/vodenica-toplice.jpg" alt="Toplice" class="image-style" id="toplice">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Zivinice/visca.jpg" alt="Ribnjak na Višći" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Ribnjak na Višći </h4>
+                  <p> U prelijepom prirodnom ambijentu otrgnuta je od zaborava uz tipični
+                    bosanski ambijent, posjeduje prelijep ribnjak, staze za setnju, nekolicinu starih
+                    bosanskih kuća koje su prije više od stotinu godina bile dio tradicije naroda ovog kraja.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Ribnjak u Priluku </h4>
+                  <p> Ribnjak u Priluku, ono što ovu lokaciju karakteriše jeste kvalitetna tradicionalna hrana,
+                    široka ponuda jela od svježe ulovljene ribe, kompleks bungalova, zelenilo i prirodna
+                    hladovina upotpunjava ambijent za savršeni porodični odmor, te poslovne ručkove.
+                    „Ribnjak“ je iugodno mjesto za boravak posjetilaca koji su u potrazi za mirom, i
+                    uživanjem u prirodi. </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Zivinice/priluk.jpg" alt="Ribnjak u Priluku" class="image-style" id="priluk">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="atrakcije-zivinice" class="section-border">
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h3 class="heading"> Atrakcije </h3>
+                  <h4> Kompleks "Rajsko jezero Bašigovci" </h4>
+                  <p> Rajsko jezero Bašigovci je već duži niz godina prepoznato kao ugodno mjesto za jednodnevni
+                    odmor i rekreaciju posjetilaca iz svih dijelova BiH. </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Zivinice/jezero-basigovci.jpg" alt="Rajsko jezero Bašigovci" class="image-style" id="basigovci">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Zivinice/mackovac.jpg" alt="Etno avlija Mačkovac" class="image-style" id="mackovac">
+                </div>
+                <div class="col-lg">
+                  <h4> Etno avlija Mačkovac </h4>
+                  <p> Etno avlija Mačkovac predstavlja svojevrstan zavičajni muzej i idealno mjesto za odmor u
+                    prelijepom, tipično bosanskom ambijentu, sa starim bosanskim kućama koje sadrže više od tri hiljade bakarnih, srebrnih, drvenih i keramičkih
+                    rukotvorina, te više od 1.600 starih knjiga i dokumenata. </p>
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Jezero Modrac </h4>
+                  <p> Jedan od neiskorištenih turističkih potencijala jeste akumulaciono jezero Modrac,
+                    koje je u prošloj deceniji predstavljalo izuzetno posjećenu turističku lokaciju,
+                    ali je danas, usljed nedovoljnog finansijskog ulaganja u razvitak istog,
+                    zagađeno i neupotrebljivo za turiste.
+                  </p>
+                </div>
+                <div class="col-4-lg">
+                  <img src="../Images/Zivinice/modrac.png" alt="Jezero Modrac" class="image-style">
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="../Images/Zivinice/drenik.jpg" alt="Drenik" class="image-style">
+                </div>
+                <div class="col-lg">
+                  <h4> Drenik </h4>
+                  <p> Planinski dom, mnoštvo uređenih planinskih staza i drugi sadržaji na Dreniku,
+                    kao i čitava mreža čistih proplanaka, potočića i rječica predstavljaju istinske
+                    turističke potencijale u području brdsko-planinskog i rekreativnog turizma. </p>
+                </div>
+              </div>
+            </div>
+            <div class="section img-section">
+              <div class="row">
+                <div class="col-lg">
+                  <h4> Eko kamp Rijeka – Šerići </h4>
+                  <p> U kontekstu kamping turizmu atraktivnost Grada Živinice
+                    posebno se odnosi na prirodne karakteristike prostora, s obzirom na orijentisanost
+                    pojsetilaca - kampera ka prirodi i ispunjenju slobodnog vremena u prirodi. </p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="../Images/Zivinice/eko-kamp.jpg" alt="Eko kamp Rijeka – Šerići" class="image-style">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 aside-box">
+        <div class="fixed">
+          <img src="../Images/Zivinice/zivinice-grb.png" class="grb" alt="Grb - Živinice">
+          <h1 class="aside-header"> Živinice </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../JS/index.js" charset="utf-8"></script>
+</body>
+</html>

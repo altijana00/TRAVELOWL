@@ -1,0 +1,166 @@
+/* Navigation */
+.pocetna {
+  margin:5% !important;
+  width:40% !important;
+}
+
+.nav {
+  margin-top:10%;
+
+}
+
+.nav-link {
+  padding-left:0 !important;
+}
+
+.nav-button {
+  width:100%;
+  margin-bottom:10%;
+
+}
+
+/* Form Link */
+#form-text {
+  font-weight: bold;
+  font-family: Poppins;
+  font-size: 20px;
+  text-align:center;
+}
+
+
+#form-icon {
+font-size: 25px;
+  padding-left:3%;
+
+}
+
+/* Main Box Section */
+.big-box {
+  background-color: #F4F5DB;
+  height:100%;
+
+}
+
+.container {
+  margin-top: 5%;
+}
+
+/* Carousel for Business Templates */
+.container-business {
+  position:relative;
+  z-index:0;
+}
+
+.carousel-control-prev {
+  margin-left:-10%;
+}
+
+.carousel-control-next {
+    margin-right: -10%;
+}
+
+.fa-angle-left, .fa-angle-right {
+  color: black;
+  font-size: 40px;
+}
+
+#sehara {
+position:absolute;
+}
+
+#jazuk {
+position:absolute;
+  display:none;
+}
+
+#shai {
+position:absolute;
+  display:none;
+}
+
+#darovi-prirode {
+  position:absolute;
+    display:none;
+}
+
+
+/* Aside Section */
+.small-box {
+  background-color: #FFC947;
+  height:100% !important;
+  text-align: center;
+}
+
+.aside-header {
+  margin-top:90%;
+}
+
+.icon {
+  margin:20% 20%;
+  align:center;
+  font-size:100px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .container-fluid {
+    height:110% !important;
+  }
+
+  .nav {
+    display:none !important;
+  }
+
+  .pocetna {
+    width: auto !important;
+  }
+
+  .aside-header {
+    display:none;
+  }
+
+  .small-box {
+    padding-top:60%;
+  }
+
+  .icon {
+    font-size: 60px !important;
+    margin: 20% 20% 0% 15% !important;
+  }
+
+  #form-text {
+    font-size: 8px;
+    margin-top: 100%;
+  }
+
+  .col {
+    padding:0 !important;
+  }
+
+  #sehara, #jazuk, #shai, #darovi-prirode {
+    display:block;
+    padding:3%;
+  }
+
+  #sehara {
+    margin-top: 20%;
+  }
+
+  #jazuk {
+    margin-top: 100%;
+  }
+
+  #shai {
+    margin-top: 180%;
+  }
+
+  #darovi-prirode {
+    margin-top: 260%;
+  }
+
+  .fa-angle-left, .fa-angle-right {
+    font-size: 20px;
+  }
+
+}
