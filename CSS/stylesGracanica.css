@@ -314,7 +314,7 @@ font-family: Poppins;
 
   .hidden {
     display:block;
-    margin-top:150%;
+    margin-top:152%;
   }
 
   .grb-hidden {
@@ -323,11 +323,12 @@ font-family: Poppins;
   }
 
   .navigation {
-    width:20% !important;
+    width:25% !important;
+    margin-left:-3%;
   }
 
   .nav {
-    margin-top: 30%;
+    margin-top: 15%;
   }
   .nav-link {
     padding:0 !important;
@@ -362,6 +363,14 @@ font-family: Poppins;
   .grb {
     margin:0;
     margin-bottom:5%;
+  }
+
+  .tur-info {
+    margin-right: 5%;
+  }
+
+  pre {
+    font-size: 10px !important;
   }
 
 }

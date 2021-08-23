@@ -181,7 +181,7 @@ border-right: 1px solid white;
   }
 
   .navigation {
-    width:20% !important;
+    width:25% !important;
   }
 
   .nav {
@@ -222,5 +222,7 @@ border-right: 1px solid white;
     margin:0;
     margin-bottom:5%;
   }
+
+
 
 }

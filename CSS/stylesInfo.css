@@ -33,13 +33,17 @@
 
   .info-text {
     margin: 25% 0% 0% 0%;
-    font-size: 14px;
-    line-height: 1.5rem;
+    font-size: 10px;
+    line-height: 1rem;
     padding-top: 15%;
   }
 
   .pocetna {
-    width:auto !important;
+    width: auto !important;
+  }
+
+  .fa-home {
+    font-size:15px;
   }
 
   .aside-header {
@@ -47,11 +51,15 @@
   }
 
   .icon {
-    margin:0 !important;
-    font-size: 75px !important;
+    margin-left:-10% !important;
+    font-size: 60px !important;
   }
 
   .small-box {
     padding-top: 60%;
+  }
+
+  #small-text {
+    font-size: 8px;
   }
 }

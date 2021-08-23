@@ -218,7 +218,7 @@ border-right: 1px solid white;
   }
 
   .navigation {
-    width:23% !important;
+    width:27% !important;
   }
 
   .nav {
@@ -300,6 +300,14 @@ border-right: 1px solid white;
   .municipium{
     margin-top:5%;
     margin-left:0;
+  }
+
+  .tur-info {
+    margin-right:5%;
+  }
+
+  pre {
+    font-size:10px !important;
   }
 
 }
